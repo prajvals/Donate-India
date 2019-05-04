@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USER LOGIN FORM</title>
+	<script type="text/javascript">
+		function validate()
+		{
+			var USERNAME=document.getElementById("USERNAME").value;
+			var PASSWORD=document.getElementById("PASSWORD").value;
+			if(USERNAME=="ME"&&PASSWORD=="PASS")
+			{
+				alert("login successful");
+				window.location="user_home.html";
+			}
+			else
+			{
+				alert("login unsuccessful");
+			}
+		}
+	</script>
+	<style type="text/css">
+		.form
+		{
+			position: absolute;
+			top:30%;
+			left:50%;
+			transform: translate(-50%,-50%); 
+			background-color:lightgrey;
+			border: 1px;
+			width: 250px;
+  			border: 15px solid green;
+  			padding: 10px;
+  			margin: 20px; 
+			display: inline-block;
+			opacity: 1;
+			text-align: left;
+		}
+	</style>
+</head>
+<body style="background-image: url(ngo.jpg); background-repeat: no-repeat; background-position: centre; background-size: cover; opacity: 1">
+<h1 style="text-align: center; font-family: Geogia; background-color: Black; color: white; font-style: italic;">USER LOGIN</h1>
+	<div>
+<form class="form" method="post" name="myform">
+	<label>USERNAME</label>
+	<input type="text" name="USERNAME" id="USERNAME" required="">
+	<br>
+	<br>
+	<label>PASSWORD</label>
+	<input type="text" name="PASSWORD" id="PASSWORD">
+	<br>
+	<br>
+	<div style="text-align: center;">
+	<input type="button" name="LOGIN" value="LOGIN" onclick="validate()">
+	</div>
+</form>
+</div>
+</body>
+</html>

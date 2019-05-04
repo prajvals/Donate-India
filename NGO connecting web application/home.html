@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME TO NGO CONNECTING APPLICATION</title>
+	<script type="text/javascript">
+		function Search_ngo()
+		{	start:
+			var ngo_name=prompt("PLEASE ENTER THE NGO NAME");
+			if(ngo_name>0||ngo_name<0)
+// this is because prompt always returns a string and here we have to check if the number entered here is the string or integer
+			{
+			alert("ENTER A NAME");
+			Search_ngo();
+			}
+			else
+			{
+				alert("thanks");
+			}
+		}
+	</script>
+</head>
+<body style="background-image: url(ngo.jpg); background-repeat: no-repeat; background-position: centre; background-size: cover; opacity: 1 " >
+	<div style="background-color: skyblue">
+		<h1  style="text-transform: uppercase; text-align: center; color: beign; font-family: Comic Sans MS">WELCOME TO NGO CONNECTING APPLICATION</h1>
+	</div>
+	<div style="text-align: center;">
+<p style="background-color: BurlyWood; font-family: arial; font-size: 20px; position: centre">Hello everyone, this is a small effort to bring the donors and the NGO volunteers closer, so we can build a better and more beautiful world even for less fortunate ones</p>
+<div style="position: absolute;top:75%;left:50%;transform: translate(-50%,-50%); background-color:lightgrey; border: 1px;width: 400px;
+  border: 15px solid green;padding: 10px;margin: 20px; text-align: center; display: inline-block; opacity: 0.8; font-family: roboto;">
+<form>
+	<label style="text-transform: uppercase; text-align: center; font-family:Comic Sans MS; color: LightCoral font-size:20px">how can we help you</label>
+	<br>
+	<br>
+	<fieldset>
+	<legend>NEW TO THE NETWORK</legend>		
+	<br>
+	<input type="button" value="KNOW ABOUT NGOS" name="" onclick="Search_ngo()" style="padding: 14px 40px; border-radius: 8px; border: 2px solid red; opacity: 1;">
+	<br> 
+	<br>
+	<input type="button" onclick="location.href='donation_request_form.html'" value="DIRECTLY MAKE A DONATION" style="padding: 14px 40px; border-radius: 8px; border: 2px solid red;">
+	<br>
+	<br>
+</fieldset>
+<fieldset>
+	<legend>CONSIDER BEING A PART OF IT</legend>
+	<br>
+	<input type="button" onclick="location.href='ngo_signup.html'" value="REGISTER AS NGO" style="padding:14px 40px; border-radius:8px; border:2px solid red;"></a>
+	<br>
+	<br>
+	<input type="button" onclick="location.href='user_sign_up.html'" value="SIGN UP AS A USER" style="padding: 14px 40px; border-radius: 8px; border: 2px solid red;">
+	<br>
+	<br>
+	<input type="button" onclick="location.href='ngo_login.html'" value="NGO LOGIN" style="padding: 14px 40px; border-radius: 8px; border: 2px solid red;">
+	<br>
+	<br>
+	<input type="button" onclick="location.href='user_login.html'" value="USER LOGIN" style="padding: 14px 40px; border-radius: 8px; border: 2px solid red;">
+	<br>
+	<br>
+	<input type="button" value="ABOUT US" style="padding: 14px 40px; border-radius: 8px; border: 2px solid red;">
+	<br>
+	<br>
+</fieldset>
+	</form>
+</div>
+</body>
+</html>
