@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="457.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label layoutX="104.0" layoutY="-21.0" prefHeight="114.0" prefWidth="274.0" text="User Form" textFill="#e400ff">
+         <font>
+            <Font name="Segoe Print" size="48.0" />
+         </font>
+      </Label>
+      <Text layoutX="68.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" wrappingWidth="103.7366943359375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="89.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City :" wrappingWidth="81.336669921875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userFirstName" layoutX="227.0" layoutY="115.0" />
+      <TextField fx:id="userStreet" layoutX="227.0" layoutY="211.0" />
+      <TextField fx:id="userCity" layoutX="227.0" layoutY="258.0" />
+      <Button fx:id="userSubmitButton" layoutX="208.0" layoutY="365.0" mnemonicParsing="false" onAction="#verifyCorrectnessOfUserForm" text="Submit">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="70.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userLastName" layoutX="227.0" layoutY="160.0" />
+      <Text layoutX="89.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="81.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pincode :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userPincode" layoutX="227.0" layoutY="308.0" />
+      <Text layoutX="68.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id:" wrappingWidth="103.7366943359375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userIdInputBox" layoutX="227.0" layoutY="80.0" />
+   </children>
+</AnchorPane>
